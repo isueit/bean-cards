@@ -1,0 +1,19 @@
+<?php
+  
+use Drupal\block\Entity\Block;
+use Drupal\block_content\Entity\BlockContent;
+
+
+/**
+ * Implements hook_install().
+ */
+
+ function bean_cards_install(){
+  //Do Initialization stuff here
+  $block_content = BlockContent::create([
+    'type' => 'content_card',
+    'info' => 'Content Card',
+  ]);
+  $block_content->save();
+ }
+

@@ -14,4 +14,4 @@ This is done with the following steps:
 
 <br/>
 <br/>
-This module was built for the intention of following the above steps and using the custom blocks with Panel and Page Manager, if those two modules are not enabled on the site when the Content Cards module is enabled then it will enable and install them.
+This module was built for the intention of following the above steps and using the custom blocks to create views displayed with Panel and Page Manager.

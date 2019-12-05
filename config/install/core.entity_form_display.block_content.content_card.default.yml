@@ -4,32 +4,32 @@ status: true
 dependencies:
   config:
     - block_content.type.content_card
-    - field.field.block_content.content_card.body
+    - field.field.block_content.content_card.field_color_style
     - field.field.block_content.content_card.field_content_card_image
     - field.field.block_content.content_card.field_content_card_title
     - field.field.block_content.content_card.field_content_card_url
+    - field.field.block_content.content_card.field_icon
+    - field.field.block_content.content_card.field_text_size
     - image.style.thumbnail
   module:
     - image
     - link
     - text
+_core:
+  default_config_hash: B6yrmeTNDvQujDYWZvrfphhv7tloYY8c7U5RopzcYQ0
 id: block_content.content_card.default
 targetEntityType: block_content
 bundle: content_card
 mode: default
 content:
-  body:
+  field_color_style:
     weight: 4
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
+    settings: {  }
     third_party_settings: {  }
-    type: text_textarea_with_summary
+    type: options_select
     region: content
   field_content_card_image:
-    weight: 2
+    weight: 1
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -37,7 +37,7 @@ content:
     type: image_image
     region: content
   field_content_card_title:
-    weight: 1
+    weight: 0
     settings:
       size: 60
       placeholder: ''
@@ -45,16 +45,28 @@ content:
     type: text_textfield
     region: content
   field_content_card_url:
-    weight: 3
+    weight: 2
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
     region: content
+  field_icon:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_text_size:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   info:
     type: string_textfield
-    weight: 0
+    weight: 6
     region: content
     settings:
       size: 60

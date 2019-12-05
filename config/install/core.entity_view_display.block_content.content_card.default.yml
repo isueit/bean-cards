@@ -4,32 +4,37 @@ status: true
 dependencies:
   config:
     - block_content.type.content_card
-    - field.field.block_content.content_card.body
+    - field.field.block_content.content_card.field_color_style
     - field.field.block_content.content_card.field_content_card_image
     - field.field.block_content.content_card.field_content_card_title
     - field.field.block_content.content_card.field_content_card_url
+    - field.field.block_content.content_card.field_icon
+    - field.field.block_content.content_card.field_text_size
   module:
     - image
     - link
+    - options
     - text
+_core:
+  default_config_hash: VzVmxB-CF9qe8LynMoY7VzgmKzWxPx6SYpIJ8LYoZz0
 id: block_content.content_card.default
 targetEntityType: block_content
 bundle: content_card
 mode: default
 content:
-  body:
-    weight: 1
-    label: hidden
+  field_color_style:
+    weight: 5
+    label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    type: list_default
     region: content
   field_content_card_image:
     weight: 2
     label: hidden
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
     type: image
     region: content
@@ -51,5 +56,19 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
+  field_icon:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_text_size:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
 hidden: {  }

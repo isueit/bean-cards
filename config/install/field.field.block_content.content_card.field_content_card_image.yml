@@ -7,6 +7,8 @@ dependencies:
     - field.storage.block_content.field_content_card_image
   module:
     - image
+_core:
+  default_config_hash: WaMFcBXVXJQXSPhx3r3deHW9g4gIoiRy1UN7dh-VKI0
 id: block_content.content_card.field_content_card_image
 field_name: field_content_card_image
 entity_type: block_content

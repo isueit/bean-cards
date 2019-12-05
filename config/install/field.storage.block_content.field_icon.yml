@@ -1,0 +1,99 @@
+uuid: ff8a5374-8d35-4c0b-8c13-c300f8b0d7ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_icon
+field_name: field_icon
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: fa-users
+      label: fa-users
+    -
+      value: fa-book
+      label: fa-book
+    -
+      value: fa-pencil
+      label: fa-pencil
+    -
+      value: fa-desktop
+      label: fa-desktop
+    -
+      value: fa-play-circle
+      label: fa-play-circle
+    -
+      value: fa-newspaper-o
+      label: fa-newspaper-o
+    -
+      value: fa-calendar
+      label: fa-calendar
+    -
+      value: fa-file-text-o
+      label: fa-file-text-o
+    -
+      value: fa-envelope-o
+      label: fa-envelope-o
+    -
+      value: fa-phone
+      label: fa-phone
+    -
+      value: fa-star-o
+      label: fa-star-o
+    -
+      value: fa-heart-o
+      label: fa-heart-o
+    -
+      value: fa-map-marker
+      label: fa-map-marker
+    -
+      value: fa-graduation-cap
+      label: fa-graduation-cap
+    -
+      value: fa-check
+      label: fa-check
+    -
+      value: fa-list-ul
+      label: fa-list-ul
+    -
+      value: fa-question-circle
+      label: fa-question-circle
+    -
+      value: fa-info-circle
+      label: fa-info-circle
+    -
+      value: fa-arrow-right
+      label: fa-arrow-right
+    -
+      value: fa-download
+      label: fa-download
+    -
+      value: fa-area-chart
+      label: fa-area-chart
+    -
+      value: fa-bar-chart
+      label: fa-bar-chart
+    -
+      value: fa-pie-chart
+      label: fa-pie-chart
+    -
+      value: fa-facebook-official
+      label: fa-facebook-official
+    -
+      value: fa-twitter
+      label: fa-twitter
+    -
+      value: fa-youtube
+      label: fa-youtube
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

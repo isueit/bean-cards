@@ -7,6 +7,8 @@ dependencies:
     - field.storage.block_content.field_content_card_url
   module:
     - link
+_core:
+  default_config_hash: wL5cnAPghS0AP3e4lhpGrHt1nzddvipQnmzVrhNYkSY
 id: block_content.content_card.field_content_card_url
 field_name: field_content_card_url
 entity_type: block_content

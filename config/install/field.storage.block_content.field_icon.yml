@@ -89,6 +89,27 @@ settings:
     -
       value: fa-youtube
       label: fa-youtube
+    -
+      value: fa-shopping-basket
+      label: fa-shopping-basket
+    -
+      value: fa-home
+      label: fa-home
+    -
+      value: fa-search
+      label: fa-search
+    -
+      value: fa-calendar-alt
+      label: fa-calendar-alt
+    -
+      value: fa-coins
+      label: fa-coins
+    -
+      value: fa-signature
+      label: fa-signature
+    -
+      value: fa-laptop
+      label: fa-laptop
   allowed_values_function: ''
 module: options
 locked: false

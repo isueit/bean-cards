@@ -10,6 +10,7 @@ dependencies:
     - field.field.block_content.content_card.field_content_card_url
     - field.field.block_content.content_card.field_icon
     - field.field.block_content.content_card.field_text_size
+    - field.field.block_content.content_card.field_body
     - image.style.thumbnail
   module:
     - image
@@ -22,11 +23,13 @@ targetEntityType: block_content
 bundle: content_card
 mode: default
 content:
-  field_color_style:
-    weight: 4
-    settings: {  }
+  field_content_card_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: text_textfield
     region: content
   field_content_card_image:
     weight: 1
@@ -36,37 +39,41 @@ content:
     third_party_settings: {  }
     type: image_image
     region: content
-  field_content_card_title:
-    weight: 0
-    settings:
-      size: 60
-      placeholder: ''
+  field_body:
+    weight: 2 
+    settings: {  }
     third_party_settings: {  }
-    type: text_textfield
+    type: options_select
     region: content
   field_content_card_url:
-    weight: 2
+    weight: 3
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
     region: content
+  field_color_style:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_icon:
-    weight: 3
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_text_size:
-    weight: 5
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   info:
     type: string_textfield
-    weight: 6
+    weight: 7
     region: content
     settings:
       size: 60

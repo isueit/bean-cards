@@ -10,6 +10,7 @@ dependencies:
     - field.field.block_content.content_card.field_content_card_url
     - field.field.block_content.content_card.field_icon
     - field.field.block_content.content_card.field_text_size
+    - field.field.block_content.content_card.field_body
   module:
     - image
     - link
@@ -66,6 +67,13 @@ content:
     region: content
   field_text_size:
     weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_body:
+    weight: 7
     label: above
     settings: {  }
     third_party_settings: {  }
